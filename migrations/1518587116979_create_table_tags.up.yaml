@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "tags"("tid" serial NOT NULL, "name" text NOT NULL, "datastamp"
+      timestamptz NOT NULL, PRIMARY KEY ("tid") )
+  type: run_sql
+- args:
+    name: tags
+  type: add_existing_table_or_view

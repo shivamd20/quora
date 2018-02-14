@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "tags" ALTER COLUMN "datastamp" TYPE timestamptz;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "tags" ALTER COLUMN "datastamp" SET DEFAULT now();
+  type: run_sql
+- args:
+    sql: ALTER TABLE "tags" ALTER COLUMN "datastamp" SET NOT NULL;
+  type: run_sql

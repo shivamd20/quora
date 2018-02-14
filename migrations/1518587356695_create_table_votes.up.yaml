@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "votes"("vid" serial NOT NULL, "isupvote" boolean NOT NULL,
+      "by" integer NOT NULL, "answer" text NOT NULL, "timestamp" timestamptz NOT NULL
+      DEFAULT now(), PRIMARY KEY ("vid") )
+  type: run_sql
+- args:
+    name: votes
+  type: add_existing_table_or_view

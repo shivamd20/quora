@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "question" ADD FOREIGN KEY ("askedby") REFERENCES "user" ("uid")
+  type: run_sql

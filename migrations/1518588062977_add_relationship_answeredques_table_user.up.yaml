@@ -1,0 +1,8 @@
+- args:
+    name: answeredques
+    table: user
+    using:
+      foreign_key_constraint_on:
+        column: answeredby
+        table: answer
+  type: create_array_relationship

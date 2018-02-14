@@ -1,0 +1,6 @@
+- args:
+    name: ansby
+    table: answer
+    using:
+      foreign_key_constraint_on: answeredby
+  type: create_object_relationship

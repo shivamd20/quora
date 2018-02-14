@@ -1,0 +1,6 @@
+- args:
+    name: askedbyrel
+    table: question
+    using:
+      foreign_key_constraint_on: askedby
+  type: create_object_relationship

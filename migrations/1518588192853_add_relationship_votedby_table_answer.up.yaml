@@ -1,0 +1,8 @@
+- args:
+    name: votedby
+    table: answer
+    using:
+      foreign_key_constraint_on:
+        column: answer
+        table: votes
+  type: create_array_relationship

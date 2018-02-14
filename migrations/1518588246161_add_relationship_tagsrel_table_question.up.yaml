@@ -1,0 +1,8 @@
+- args:
+    name: tagsrel
+    table: question
+    using:
+      foreign_key_constraint_on:
+        column: question
+        table: tags
+  type: create_array_relationship

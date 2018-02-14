@@ -1,0 +1,8 @@
+- args:
+    name: askedques
+    table: user
+    using:
+      foreign_key_constraint_on:
+        column: askedby
+        table: question
+  type: create_array_relationship

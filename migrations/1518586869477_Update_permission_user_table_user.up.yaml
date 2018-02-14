@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - uid
+      - name
+      - college
+      - branch
+      - semster
+      filter: {}
+    role: user
+    table: user
+  type: create_select_permission

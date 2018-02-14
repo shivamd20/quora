@@ -1,0 +1,11 @@
+- args:
+    permission:
+      columns:
+      - branch
+      - college
+      - name
+      - semster
+      filter: {}
+    role: user
+    table: user
+  type: create_update_permission
